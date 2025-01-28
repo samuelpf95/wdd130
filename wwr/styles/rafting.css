@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #2f78ee;
+    --secondary-color: #17c6fb;
+    --accent1-color: #ffffff;
+    --accent2-color: #ad0000;
+}
+*{
+    margin: 0px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    background-color: var(--secondary-color);
+}
+h1, h2{
+    font-family: "Fontdiner Swanky", serif;
+    font-size: 3rem;
+    color: var(--accent2-color);
+}
+
+nav{
+    background-color: var(--primary-color);
+    padding: 100px 100px;
+    text-align: right;
+
+}
+header img{
+    position: absolute;
+    float: left;
+    top: 20px;
+    left: 500px;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    color: var(--accent1-color);
+    padding: 10px 35px;
+    border: 1px solid black; 
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin: -.5px;
+}
+p{
+    font-size:large;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: "Molengo", serif;
+    font-size: 1.5rem;
+}
+.fontdiner-swanky-regular {
+    font-family: "Fontdiner Swanky", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.molengo-regular {
+    font-family: "Molengo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+article img{
+    float: right;
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+    background-color: #0056df00;
+}
+article{
+    position: absolute;
+    display: block;
+    top: 200px;
+    max-width: 90%;
+    left: 50px;
+    background-color: #0000008f;
+}
+article p{
+    background-color: #00000000;
+    color: var(--accent1-color);
+}
+.hero{
+    display: block;
+    width: 100%;
+    height: auto;
+    right: 40px;
+}
+div{
+    position: relative;
+}
+div h1{
+    position: absolute;
+    left: 75px;
+    top: 20px;
+    background-color: #000000ad;
+    display: block;
+    width: 90%;
+    text-align: center;
+    padding: 20px 0;
+}
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
