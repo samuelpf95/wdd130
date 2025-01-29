@@ -101,3 +101,20 @@ div h1{
 a {
     text-decoration: none;
 }
+footer{
+    background-color: var(--primary-color);
+    padding: 25px;
+}
+footer a{
+    background-color: #00000000;
+}
+footer p{
+    background-color: #00000000;
+    color: var(--accent1-color);
+}
+footer a img{
+    max-width: 40px;
+    height: auto;
+    margin: -25px;
+    background-color: #00000000;
+}
