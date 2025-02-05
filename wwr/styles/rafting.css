@@ -1,42 +1,64 @@
 :root {
-    --primary-color: #2f78ee;
-    --secondary-color: #17c6fb;
+    --primary-color: #3370e9;
+    --secondary-color: #7081fb;
     --accent1-color: #ffffff;
-    --accent2-color: #ad0000;
+    --accent2-color: #000000d5;
 }
 *{
-    margin: 0px auto;
-    padding: 0 20px;
-    max-width: 1200px;
     background-color: var(--secondary-color);
+    margin: auto;
+}
+
+body{
+    max-width: 1100px;
+    margin: 0px auto;
 }
 h1, h2{
     font-family: "Fontdiner Swanky", serif;
     font-size: 3rem;
     color: var(--accent2-color);
 }
-
 nav{
-    background-color: var(--primary-color);
-    padding: 100px 100px;
-    text-align: right;
-
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+}
+header {
+    background-color: #204897;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+	padding: 30px;
+	max-width: 1200px;
 }
 header img{
-    position: absolute;
-    float: left;
-    top: 20px;
-    left: 500px;
-    margin: 0;
-    padding: 0;
+    margin: .5rem 0.25rem 0 1rem;
+	width: 120px;
+	height: auto;
+    background-color: #204897;
+    grid-column: 2;
+    
 }
-nav a{
+header nav {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	text-decoration: none;
+	font-size: 1.2rem;
+    grid-column: 3;
+    background-color: #204897;
+}
+header nav a{
+    display: block;
+    background-color: var(--primary-color);
     color: var(--accent1-color);
-    padding: 10px 35px;
-    border: 1px solid black; 
-    text-align: center;
-    background-color: var(--secondary-color);
-    margin: -.5px;
+    border: 1px solid black;
+    padding: 0 20px;
+}
+nav a:hover {
+	color: var(--accent1-color);
+	font-weight: 700;
+	text-decoration: underline;
 }
 p{
     font-size:large;
@@ -61,48 +83,74 @@ article img{
     height: auto;
     margin: 10px;
     background-color: #0056df00;
+    padding: 1rem;
 }
 article{
     position: absolute;
-    display: block;
+    display: flex;
+    align-items:center;
     top: 200px;
-    max-width: 90%;
-    left: 50px;
+    max-width: 85%;
+    left: 6%;
+    padding: 1rem;
     background-color: #0000008f;
 }
 article p{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
     background-color: #00000000;
     color: var(--accent1-color);
+    order: 0;
 }
 .hero{
     display: block;
     width: 100%;
     height: auto;
-    right: 40px;
 }
 div{
     position: relative;
+    
 }
 div h1{
     position: absolute;
-    left: 75px;
+    left: 50px;
     top: 20px;
-    background-color: #000000ad;
+    background-color: #ffffff39;
     display: block;
-    width: 90%;
+    width: 1000px;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .hero img{
     display: block;
     width: 100%;
     height: auto;
+    margin: auto;
 }
 a {
     text-decoration: none;
 }
-footer{
+section h2{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+section img{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    color: var(--accent1-color);
     background-color: var(--primary-color);
+}
+section figure img{
+    display: grid;
+    background-color: var(--primary-color)
+}
+footer{
+    display: grid;
+    grid-template-columns: 16fr 1fr 1fr 1fr;
+    background-color: #204897;
     padding: 25px;
 }
 footer a{
@@ -111,10 +159,54 @@ footer a{
 footer p{
     background-color: #00000000;
     color: var(--accent1-color);
+    text-align: left;
 }
 footer a img{
     max-width: 40px;
     height: auto;
-    margin: -25px;
     background-color: #00000000;
+}
+section p{
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    margin: 2rem;
+}
+figure {
+    display: flex;
+    flex-flow: column;
+    margin: 1px auto;
+    background-color: var(--primary-color)
+  }
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font-family: "Molengo", serif;
+    text-align: center; 
+    margin: unset;   
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    margin: 2rem;
+    position: relative;
+    padding: 0;
+}
+.gridt{
+    grid-column: span 5;
+    margin: 0;
+    background-color: var(--primary-color);
+    padding-top: 1rem;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: .5rem;
+    grid-template-rows: auto auto;
+    background-color: var(--primary-color);
+    margin: 2rem;
+    padding: 1rem;
 }
