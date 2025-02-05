@@ -193,7 +193,7 @@ figcaption {
     background-color: var(--primary-color);
     margin: 2rem;
     position: relative;
-    padding: 0;
+    padding: 1rem 0;
 }
 .gridt{
     grid-column: span 5;
