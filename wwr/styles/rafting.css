@@ -257,7 +257,7 @@ figcaption {
 }
 .hrule{
     grid-column: 1/-1;
-    border:solid 10 px;
+    border:solid 10px;
 }
 .employees{
     display: grid;
@@ -269,7 +269,6 @@ figcaption {
     grid-row: 2;
     height: auto;
     width: 200px;
-    column-span: 4;
     padding: 1rem;
     
 }
