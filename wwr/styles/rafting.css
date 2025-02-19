@@ -32,6 +32,11 @@ header {
 	padding: 30px;
 	max-width: 1200px;
 }
+h3{
+    background-color: unset;
+    color: white;
+    margin: .5rem;
+}
 header img{
     margin: .5rem 0.25rem 0 1rem;
 	width: 120px;
@@ -257,7 +262,9 @@ figcaption {
 }
 .hrule{
     grid-column: 1/-1;
-    border:solid 10px;
+    border:10px var(--primary-color);
+    width: 1000px;
+    margin: 2rem;
 }
 .employees{
     display: grid;
