@@ -276,3 +276,80 @@ figcaption {
     color: var(--accent1-color);
     background-color: var(--primary-color);
 }
+/** Trips ***********************************/
+.tgrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.booknow{
+    grid-column: 1/-1;
+}
+.booknow a{
+    font-family: "Fontdiner Swanky", serif;
+    font-size: 3rem;
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
+.tgrid div{
+    display: grid;
+    justify-items: center;
+    background-color: #00000093;
+    margin: 1rem;
+}
+.tgrid p{
+    background-color: unset;
+    color: var(--accent1-color);
+    padding: 1rem;
+}
+.left{
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 3fr;
+}
+.right{
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 3fr 1fr; 
+
+}
+.left figure{
+    grid-column: 1;
+}
+.left p{
+    grid-column: 2;
+}
+.right figure{
+    grid-column: 2;
+}
+.right p{
+    grid-column: 1;
+}
+
+.ftrip img{
+    max-width: 300px;
+    height: auto;
+}
+.ftrip{
+    padding: 1rem;
+    background-color: unset;
+}
+.ttrip{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.ttrip table, .ttrip table th{
+    background-color: rgba(0, 0, 0, 0.753);
+    color: var(--accent1-color);
+}
+
+.underlined{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: var(--accent1-color);
+}
+th, td{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.267);
+}
