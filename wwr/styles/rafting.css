@@ -284,6 +284,7 @@ figcaption {
 }
 .booknow{
     grid-column: 1/-1;
+    padding: 2rem;
 }
 .booknow a{
     font-family: "Fontdiner Swanky", serif;
