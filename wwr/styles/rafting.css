@@ -325,7 +325,6 @@ figcaption {
 .right p{
     grid-column: 1;
 }
-
 .ftrip img{
     max-width: 300px;
     height: auto;
